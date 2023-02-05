@@ -38,11 +38,10 @@ SRCS := ft_atoi.c \
 	 
 OBJS := $(SRCS:.c=.o)
 
-all: $(NAME)
-
 $(NAME): $(OBJS)
-
 	ar rcs $(NAME) $(OBJS)
+
+all: $(NAME)
 
 clean:
 	rm -f $(OBJS)
