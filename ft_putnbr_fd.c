@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:40:06 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/02 16:50:40 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/05 14:42:21 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,19 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == INT_MIN)
-	{
-		write (fd, "-2147483648", 11);
-	}
-	else if (n < 0)
+	long long	nb;
+
+	nb = (long long)n;
+	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
-		n *= -1;
-		ft_putnbr_fd(n, fd);
+		nb *= -1;
 	}
-	else if (n >= 10)
+	if (nb >= 10)
 	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd(n % 10 + '0', fd);
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putchar_fd(nb % 10 + '0', fd);
 	}
 	else
-		ft_putchar_fd(n + '0', fd);
+		ft_putchar_fd(nb + '0', fd);
 }
