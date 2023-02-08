@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:40:06 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/05 14:42:21 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 16:19:45 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long long	nb;
+	long	nb;
 
-	nb = (long long)n;
+	nb = (long)n;
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
