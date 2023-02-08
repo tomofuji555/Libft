@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:40:44 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 16:16:21 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 18:29:46 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strchr(char *s, int c)
 	}
 	if (c == 0)
 		return (s + i);
-	return (0);
+	return (NULL);
 }
