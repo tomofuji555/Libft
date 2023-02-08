@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:43:19 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:43:20 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 18:38:45 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (len > 0 && s[start] != '\0' && i < len)
+	while (s[start] != '\0' && i < len)
 	{
 		str[i] = s[start];
 		start++;

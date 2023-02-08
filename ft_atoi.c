@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:36:25 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 16:52:34 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 18:39:28 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	st_isspace(const char *str, size_t *pi)
 {
-	int	i;
-	int	sign;
+	size_t	i;
+	int		sign;
 
 	i = 0;
 	sign = 1;

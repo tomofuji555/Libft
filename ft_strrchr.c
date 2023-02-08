@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:42:58 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 16:17:42 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 18:41:20 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 			temp = (str + i);
 		i++;
 	}
-	if (c == 0)
+	if (!c)
 		temp = (str + i);
 	return (temp);
 }
