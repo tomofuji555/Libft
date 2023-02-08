@@ -6,13 +6,13 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:36:25 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 16:43:10 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/08 16:52:34 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	st_isspace(const char *str, int *pi)
+static int	st_isspace(const char *str, size_t *pi)
 {
 	int	i;
 	int	sign;
