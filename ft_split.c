@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:40:30 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 15:54:04 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/18 13:40:38 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,21 +70,21 @@ static char	**split_work(char const *s, char c, char **str, size_t block)
 {
 	size_t		i;
 	size_t		num;
-	const char	*j;
+	char		*start;
 
 	i = 0;
 	while (i < block)
 	{
 		while (*s && *s == c)
 			s++;
-		j = s;
+		start = (char *)s;
 		num = 0;
 		while (*s && *s != c)
 		{
 			s++;
 			num++;
 		}
-		str[i] = mycopy((char *)j, num);
+		str[i] = mycopy(start, num);
 		if (!str[i])
 			return (free_all(str));
 		i++;

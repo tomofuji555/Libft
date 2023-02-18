@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:36:49 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:36:52 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/18 13:38:42 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@ void	*ft_calloc(size_t n, size_t nsize)
 	size = n * nsize;
 	if (size != 0 && n > SIZE_MAX / size)
 		return (NULL);
-	if (nsize != size / n)
-		return (NULL);
-	block = malloc(size);
+	block = (char *)malloc(size);
 	if (!block)
 		return (NULL);
 	ft_bzero(block, size);

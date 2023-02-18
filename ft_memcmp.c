@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:38:35 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 15:38:31 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/18 13:39:03 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	if (n == 0)
 		return (0);
 	while (i < n - 1 && t1[i] == t2[i])
-	{
-		if (n == 0)
-			return (0);
 		i++;
-	}
 	return (t1[i] - t2[i]);
 }
 

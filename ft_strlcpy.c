@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:41:45 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:41:46 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/18 13:42:41 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dst_size)
 	i = 0;
 	if (dst_size == 0)
 		return (src_size);
-	while (i < dst_size - 1 && src[i] != '\0')
+	while (i < dst_size - 1 && src[i])
 	{
 		dest[i] = src[i];
 		i++;
